@@ -42,7 +42,7 @@ nav a {
 main {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 200vh;
     width: 100%;
 }
 
@@ -55,11 +55,16 @@ main {
 h3 {
     text-align: right;
     border-right: solid black;
-    width: 20%;
+    width: 25%;
 }
 
-.info {
+#about-me-content {
+    display: flex;
+    flex-direction: column;
+}
 
+#about-me-content p {
+    height: 50%;
 }
 
 #work-content {
@@ -72,7 +77,12 @@ h3 {
     width: 80%;
 }
 
+#work-content .project:nth-child(1){
+    width: 100%;
+}
+
 .project {
     background-color: blue;
     width: 45%;
 }
+
