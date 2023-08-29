@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: darkgrey;
 }
 
 header {
@@ -9,6 +10,7 @@ header {
     background-color: rgb(59, 56, 72);
     justify-content: space-between;
     align-items: center;
+    font-size: x-large;
 }
 
 header h1 {
@@ -22,14 +24,24 @@ header h1 {
 
 nav {
     display: inline-flex;
+    height: 65%;
     width: 33%;
     justify-content: space-around;
-    background-color: blueviolet;
+    border: solid black;
     align-items: center;
+    font-size: xx-large;
 }
 
 nav a {
     text-decoration: none;
+}
+
+.nav-link {
+    width: 25%;
+}
+
+.info {
+    width: 75%;
 }
 
 #banner {
@@ -42,20 +54,32 @@ nav a {
 main {
     display: flex;
     flex-direction: column;
-    height: 200vh;
+    height: 135vh;
     width: 100%;
 }
 
 .main-section {
     display: flex;
+    width: 100%;
     flex-direction: row;
-    flex-grow: 1;
+}
+
+#about-me {
+    height: 15%;
+}
+
+#work {
+    height: 80%;
+}
+
+#contact {
+    height: 10%;
 }
 
 h3 {
     text-align: right;
     border-right: solid black;
-    width: 25%;
+    font-size: xx-large;
 }
 
 #about-me-content {
@@ -74,7 +98,6 @@ h3 {
     flex-grow: 1;
     justify-content: space-between;
     align-items: space-between;
-    width: 80%;
 }
 
 #work-content .project:nth-child(1){
@@ -82,7 +105,20 @@ h3 {
 }
 
 .project {
-    background-color: blue;
+    border: solid black;
     width: 45%;
+}
+
+#contact-content {
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
 
